@@ -9,36 +9,32 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header>
-      <div className="main-container inner ">
-        <Link  href="/">
-          <Image className='' src="/logo.png" alt="CoinPulse logo" width={350} height={90} />
-        </Link>
+    <header  >
+  <div className="inner mx-auto px-4 sm:px-6 w-full max-w-500">
+    <Link href="/" aria-label="Go to homepage">
+      <Image
+        src="/logo.png"
+        alt="CoinPulse logo"
+        width={250}
+        height={40}
+        loading="eager"
+        style={{ height: 'auto', width: 'auto' }}
+      />
+    </Link>
 
-        <nav>
-          <Link
-            href="/"
-            className={cn('nav-link', {
-              'is-active': pathname === '/',
-              'is-home': true,
-            })}
-          >
-            Home
-          </Link>
+    <nav>
+      <Link href="/" className={cn('nav-link', 'is-home', { 'is-active': pathname === '/' })}>
+        Home
+      </Link>
 
-          <p>Search Modal</p>
+               <p>Search Modal</p>
 
-          <Link
-            href="/coins"
-            className={cn('nav-link', {
-              'is-active': pathname === '/coins',
-            })}
-          >
-            All Coins
-          </Link>
-        </nav>
-      </div>
-    </header>
+      <Link href="/coins" className={cn('nav-link', { 'is-active': pathname === '/coins' })}>
+        All Coins
+      </Link>
+    </nav>
+  </div>
+</header>
   );
 };
 

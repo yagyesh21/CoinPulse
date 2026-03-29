@@ -152,7 +152,7 @@
 
 @layer components {
   .container {
-    @apply px-4 sm:px-6 mx-auto max-w-360;
+    @apply px-4 sm:px-6 mx-auto max-w-500;
   }
 
   .main-container {
