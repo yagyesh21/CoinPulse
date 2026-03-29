@@ -13,7 +13,7 @@ const Header = () => {
   <div className="inner mx-auto px-4 sm:px-6 w-full max-w-500">
     <Link href="/" aria-label="Go to homepage">
       <Image
-        src="/logo.png"
+        src="/logo.svg"
         alt="CoinPulse logo"
         width={250}
         height={40}
