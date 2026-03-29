@@ -152,12 +152,11 @@
 
 @layer components {
   .container {
-    @apply px-4 sm:px-6 mx-auto max-w-360;
+    @apply px-4 sm:px-6 mx-auto max-w-500;
   }
 
   .main-container {
-     @apply py-6 md:py-12 mx-auto px-4 sm:px-6 max-w-360 w-full 
-         flex items-center justify-between gap-4;
+    @apply py-6 md:py-12 mx-auto px-4 sm:px-6 max-w-360 w-full space-y-6 md:space-y-6 ;
   }
 
   .badge {
